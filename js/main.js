@@ -72,6 +72,13 @@
 [23] Form focus init
 */
 
+
+function scroolToDiv(campo) {
+    $('html, body').animate({
+        scrollTop: $(campo).offset().top
+    }, 1000);
+}
+
 /* [0] Google map init */
 function initMap() {
     let lat_lng = {
